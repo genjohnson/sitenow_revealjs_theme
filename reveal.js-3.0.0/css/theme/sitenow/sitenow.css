@@ -7,12 +7,16 @@
  * The accent color is "Delaney teal", #017e8c.
  * The complementary color of #017e8c is #8C0F01.
  */
+
+ /* Dark teal: #0C8693 */
+ /* Light teal: #90C3C9 */
+ /* Near white: #F0F0F0 */
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background: #F0F0F0;
+  background-color: #F0F0F0; }
 
 .reveal {
   font-family: 'Roboto', sans-serif;
@@ -21,7 +25,7 @@ body {
   color: #444444; }
 
 ::selection {
-  color: #fff;
+  color: #F0F0F0;
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
 
@@ -274,3 +278,58 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #017e8c; }
+
+
+
+
+.reveal .slides > section, 
+.reveal .slides > section > section {
+  padding: 0;
+}
+
+section {
+  height: 100%;
+}
+
+.title-wrapper .title-block {
+  padding: 0 20px;
+  position: relative;
+  top: 45%;
+}
+
+.title-wrapper {
+  background-color: #0C8693;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.title-block h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.main-content-wrapper {
+  width: 72%;
+  position: absolute;
+  left: 25%;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.main-content-wrapper .main-content-block {
+  padding: 20px;
+  text-align: left;
+}
+
+.right-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 3%;
+  background-color: #90C3C9;
+}
