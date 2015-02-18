@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 /**
  * A theme for reveal.js presentations, based on the University of Iowa ITS
@@ -11,23 +11,18 @@
  /* Dark teal: #0C8693 */
  /* Light teal: #90C3C9 */
  /* Near white: #F0F0F0 */
- /* text color: #334F64; */
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #000;
-  background-color: #000; }
-
-.slides {
-  background-color: #F0F0F0;
-}
+  background: #F0F0F0;
+  background-color: #F0F0F0; }
 
 .reveal {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 36px;
-  font-weight: 300;
-  color: #334F64; }
+  font-weight: 400;
+  color: #444444; }
 
 ::selection {
   color: #F0F0F0;
@@ -43,8 +38,8 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #334F64;
-  font-weight: 400;
+  color: #444444;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
@@ -70,7 +65,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 0 0 20px 0;
+  margin: 20px 0;
   line-height: 1.3; }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -222,7 +217,10 @@ body {
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px; }
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a img {
   border-color: #017e8c;
@@ -281,147 +279,56 @@ body {
   color: #017e8c; }
 
 
-/*******************************************
- ******************************************/
- .reveal .slides > section, 
+
+
+.reveal .slides > section, 
 .reveal .slides > section > section {
   padding: 0;
 }
 
- .clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
- 
-.clearfix:after {
-  clear: both;
+section {
+  height: 100%;
 }
 
-/*.reveal h2.slide-title {
-  font-size: 1.6em;
+.title-wrapper .title-block {
+  padding: 0 20px;
+  position: relative;
+  top: 45%;
+}
+
+.title-wrapper {
+  background-color: #0C8693;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.title-block h1 {
+  color: #fff;
+  font-size: 2rem;
   margin: 0;
+}
+
+.main-content-wrapper {
+  width: 72%;
+  position: absolute;
+  left: 25%;
+  top: 0;
+  bottom: 0;
   padding: 20px;
 }
 
-.reveal p {
-  margin-top: 0;
-}
-
-.reveal p:last-of-type {
-  margin-bottom: 0;
-}
-
-.reveal .main-content-wrapper {
-  height: 696px; /* height of slide - (height of footer wrapper + height of header wrapper) */
-}
-
-/* header */
-.reveal .header-wrapper {
-  height: 102px; /* same height as footer-wrapper */
-}
-
-/* title */
-.reveal .title-wrapper {
-  background-color: #0C8693;
-  display: table;
-  float: left;
-  height: 100%;
-  width: 25%;
-}
-
-.reveal .title-wrapper .slide-title {
-  color: #fff;
-  display: table-cell;
+.main-content-wrapper .main-content-block {
+  padding: 20px;
   text-align: left;
-  vertical-align: middle;
 }
 
-/* content */
-.reveal .content-wrapper {
-  display: table;
-  float: left;
-  height: 100%;
-  width: 72%;
-}
-
-.reveal .content-wrapper .content {
-  display: table-cell;
-  padding: 20px 40px;
-  text-align: left;
-  vertical-align: middle;
-}
-
-/* sidebar */
-.reveal .sidebar-wrapper {
-  background-color: #90C3C9;
-  float: left;
-  height: 100%;
+.right-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
   width: 3%;
-}
-
-/* footer */ 
-.reveal .footer-wrapper {
-  clear: both;
-  height: 102px;
-}
-
-.reveal img.sitenow-logo {
-  float: right;
-  margin: 0;
-}
-
-/**********************
-  Title slides
- *********************/
-.reveal #title-slide .title-wrapper {
-  display: table;
-  height: 900px;
-  margin-right: 20px;
-  width: 1180px;
-}
-
-.reveal #title-slide .title-inner {
-  display: table-cell;
-  float: none;
-  padding: 20px 200px 100px;
-  vertical-align: bottom;
-  width: 1180px;
-}
-
-.reveal #title-slide .sidebar-wrapper {
-  display: table;
-  height: 900px;
-  width: 400px;
-}
-
-.reveal #title-slide .sidebar-inner {
-  display: table-cell;
-  vertical-align: bottom;
-}
-
-.reveal #title-slide img.sitenow-logo {
-  max-width: 100%;
-  width: 100%
-}
-
-.reveal #title-slide .title-inner {
-  text-align: left;
-}
-
-.reveal #title-slide h1 {
-  font-size: 2.5em;
-  margin-bottom: 60px;
-}
-
-.reveal #title-slide h1 .subtitle {
-  display: block;
-  font-size: 0.6em;
-  line-height: 1em;
-  margin-top: 20px;
-}
-
-.reveal #title-slide h1,
-.reveal #title-slide h2,
-.reveal #title-slide p {
-  color: #fff;
+  background-color: #90C3C9;
 }
