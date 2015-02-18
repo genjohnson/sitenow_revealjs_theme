@@ -297,7 +297,7 @@ body {
   clear: both;
 }
 
-/*.reveal h2.slide-title {
+.reveal h2.slide-title {
   font-size: 1.6em;
   margin: 0;
   padding: 20px;
@@ -325,7 +325,7 @@ body {
   background-color: #0C8693;
   display: table;
   float: left;
-  height: 100%;
+  height: 696px; /* height of slide - (height of footer wrapper + height of header wrapper) */
   width: 25%;
 }
 
@@ -340,7 +340,7 @@ body {
 .reveal .content-wrapper {
   display: table;
   float: left;
-  height: 100%;
+  height: 696px; /* height of slide - (height of footer wrapper + height of header wrapper) */
   width: 72%;
 }
 
@@ -355,7 +355,7 @@ body {
 .reveal .sidebar-wrapper {
   background-color: #90C3C9;
   float: left;
-  height: 100%;
+  height: 696px; /* height of slide - (height of footer wrapper + height of header wrapper) */
   width: 3%;
 }
 
