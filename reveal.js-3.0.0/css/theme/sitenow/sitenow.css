@@ -18,17 +18,22 @@ body {
 	padding: 0;
 }
 
+/******************************
+   Title slide layout
+ ******************************/
 #title-slide .title-wrapper {
 	background-color: teal;
-	display: table;
 	float: left;
 	height: 100%;
+	padding: 50px 100px 50px 150px;
+	position: relative;
 	width: 75%;
 }
 
 #title-slide .title-inner {
-	display: table-cell;
-	vertical-align: middle;
+	bottom: 40%;
+	position: absolute;
+	text-align: left;
 }
 
 #title-slide .sidebar-wrapper {
