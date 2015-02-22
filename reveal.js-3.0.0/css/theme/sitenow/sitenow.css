@@ -7,3 +7,50 @@ body {
   background-color: #f0f0f0;
   color: #000;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+.reveal .slides > section, 
+.reveal .slides > section > section {
+	height: 100%;
+	padding: 0;
+}
+
+#title-slide .title-wrapper {
+	background-color: teal;
+	display: table;
+	float: left;
+	height: 100%;
+	width: 75%;
+}
+
+#title-slide .title-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#title-slide .sidebar-wrapper {
+	float: left;
+	height: 100%;
+	width: 25%;
+}
+
+#title-slide .sidebar-wrapper .sidebar-inner {
+	background-color: lightblue;
+	height: 100%;
+	margin-left: 15px;
+	position: relative;
+}
+
+#title-slide .sidebar-inner .logo {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#title-slide .sidebar-inner .logo img.sitenow-logo{
+	width: 100%;
+	height: auto;
+}
