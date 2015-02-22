@@ -3,9 +3,32 @@ body {
   color: #fff;
 }
 
-.slides {
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix { 
+	display: inline-block; 
+}
+
+/* commented backslash hack \*/
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+
+
+.reveal .slides {
   background-color: #f0f0f0;
   color: #000;
+  text-align: left;
 }
 
 * {
@@ -58,4 +81,62 @@ body {
 #title-slide .sidebar-inner .logo img.sitenow-logo{
 	width: 100%;
 	height: auto;
+}
+
+/******************************
+   Standard slide layout
+ ******************************/
+.header-wrapper,
+.footer-wrapper {
+	clear: both;
+	height: 10%;
+	width: 100%;
+}
+
+.slide .main-content-wrapper {
+	clear: both;
+	height: 80%;
+}
+
+.main-content-wrapper .title-wrapper {
+	background-color: teal;
+	display: table;
+	height: 100%;
+	float: left;
+	width: 25%;
+}
+
+.main-content-wrapper .title-wrapper .title-wrapper-inner {
+	display: table-cell;
+	padding: 40px;
+	vertical-align: middle;
+}
+
+.main-content-wrapper .content-wrapper {
+	display: table;
+	float: left;
+	height: 100%;
+	padding: 20px 40px;
+	width: 73%;
+}
+
+.main-content-wrapper .content-wrapper .content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main-content-wrapper .sidebar-wrapper {
+	background-color: lightblue;
+	float: left;
+	height: 100%;
+	width: 2%;
+}
+
+.footer-wrapper .logo {
+	float: right;
+	height: 100%;
+}
+.footer-wrapper .logo img {
+	height: 100%;
+	width: auto;
 }
