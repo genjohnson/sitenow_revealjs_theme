@@ -14,6 +14,11 @@ body {
   color: #fff;
 }
 
+img {
+	height: auto;
+	max-width: 100%;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -36,7 +41,7 @@ body {
 }
 
 /******************************
-   Fonts
+   Text and lists
  ******************************/
 .reveal .title-wrapper {
  	color: #fff;
@@ -48,16 +53,16 @@ body {
 	height: 80%;
 }
 
-#title-slide h1 {
+.title-only-slide h1 {
 	font-size: 4.5rem;
 	margin-bottom: 40px;
 }
 
-#title-slide .subtitle {
+.title-only-slide .subtitle {
 	font-size: 2.6rem;
 }
 
-#title-slide p {
+.title-only-slide p {
 	font-size: 1.75rem;
 }
 
@@ -124,42 +129,24 @@ body {
 /******************************
    Title slide layout
  ******************************/
-#title-slide .title-wrapper {
-	background-color: #0C8693;
-	display: table;
+.title-only-slide .main-content-wrapper {
 	float: left;
-	height: 100%;
+	width: 100%;
+}
+
+.title-only-slide .main-content-wrapper .title-wrapper {
 	padding: 50px 100px 80px 150px;
 	width: 80%;
 }
 
-#title-slide .title-inner {
+.title-only-slide .main-content-wrapper .title-inner {
 	display: table-cell;
 	vertical-align: bottom;
 }
 
-#title-slide .sidebar-wrapper {
-	float: left;
-	height: 100%;
+.title-only-slide .main-content-wrapper .sidebar-wrapper {
+	padding-left: 20px;
 	width: 20%;
-}
-
-#title-slide .sidebar-wrapper .sidebar-inner {
-	background-color: #90C3C9;
-	height: 100%;
-	margin-left: 15px;
-	position: relative;
-}
-
-#title-slide .sidebar-inner .logo {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-#title-slide .sidebar-inner .logo img.sitenow-logo{
-	width: 100%;
-	height: auto;
 }
 
 /******************************
@@ -205,10 +192,24 @@ body {
 }
 
 .main-content-wrapper .sidebar-wrapper {
-	background-color: #90C3C9;
 	float: left;
 	height: 100%;
 	width: 2%;
+}
+
+.main-content-wrapper .sidebar-wrapper .sidebar-inner {
+	background-color: #90C3C9;
+	height: 100%;
+}
+
+.sidebar-inner {
+	position: relative;
+}
+
+.sidebar-inner .logo {
+	bottom: 0;
+    max-width: 100%;
+    position: absolute;
 }
 
 .footer-wrapper .logo {
