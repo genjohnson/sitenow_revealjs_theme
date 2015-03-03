@@ -111,6 +111,25 @@ img {
 	line-height: 1.5em;
 }
 
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #017e8c;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+.reveal a:hover {
+  color: #8C0F01;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
 /******************************
    Slides
  ******************************/
